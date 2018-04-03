@@ -1,5 +1,5 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font: 24px "consolas", Futura, sans-serif;
   margin: 20px;
 }
 
@@ -14,27 +14,33 @@ ol, ul {
 }
 
 .status {
-  margin-bottom: 10px;
+  border-bottom: 0.1em solid #000;
+  font-size: 20px;
+  margin-bottom: 3em;
+  margin-left: 1em;
 }
 
 .square {
-  background: #fff;
-  border: 2px solid #999;
+  background: #9e9cf4;
+  border: 2px solid #000;
   float: left;
-  font-size: 24px;
+  font-size: 44px;
   font-weight: bold;
-  height: 64px;
-  line-height: 64px;
-  margin-right: -1px;
+  height: 94px;
+  line-height: 94px;
   margin-top: -1px;
   text-align: center;
-  width: 64px;
+  width: 94px;
 }
 
 .square:focus {
   outline: none;
 }
 
+.stepButton {
+    background-color: #bde96b;
+    font: 18px "consolas";
+}
 .kbd-navigation .square:focus {
   background: #ddd;
 }
@@ -42,6 +48,7 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  margin-left: 1em;
 }
 
 .game-info {
