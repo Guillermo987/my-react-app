@@ -46,7 +46,7 @@ class Board extends React.Component {
 class Game extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.initialState = {
       history: [
         {
           squares: Array(9).fill(null)
@@ -55,6 +55,7 @@ class Game extends React.Component {
       stepNumber: 0,
       xIsNext: true
     };
+    this.state = this.initialState;
   }
 
   handleClick(i) {
@@ -113,7 +114,7 @@ class Game extends React.Component {
           <Board squares={current.squares} onClick={i => this.handleClick(i)} />
         </div>
         <div className="game-info">
-          <div>{status}</div>
+          <div className="status">{status}</div>
           <ol>{moves}</ol>
         </div>
       </div>

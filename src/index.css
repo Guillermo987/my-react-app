@@ -15,7 +15,7 @@ ul {
 }
 
 .status {
-  border-bottom: 0.1em solid #000;
+  border: 2px solid #000;
   font-size: 20px;
   margin-bottom: 3em;
   margin-left: 1em;
@@ -23,19 +23,19 @@ ul {
 
 .square {
   background: #9e9cf4;
-  border: 2px solid #000;
   float: left;
   font-size: 44px;
   font-weight: bold;
   height: 94px;
   line-height: 94px;
   margin-top: -1px;
+  outline: 2px solid #000;
   text-align: center;
   width: 94px;
 }
 
 .square:focus {
-  outline: none;
+  background: #1d9c39;
 }
 
 .stepButton {
